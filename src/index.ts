@@ -2,9 +2,8 @@ require('dotenv').config();
 import { callContract } from './app';
 
 const run = async () => {
-  const TEST = process.env.TEST === "true";
   // Collection address
-  const collectionAddress = '0x5e53e562d26e2f392715c51f7affe3e176cbfa66';
+  const collectionAddress = '0x5e5.......';
 
   // Max amount to mint
   const maxSupply = 5;
@@ -17,6 +16,7 @@ const run = async () => {
   // const endTime = 0;
   const endTime = startTime + 60 * 10; // end in 10 min from startDate
 
+  const TEST = process.env.TEST === 'true';
   await callContract({
     collectionAddress,
     endTime,
