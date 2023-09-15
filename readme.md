@@ -2,7 +2,7 @@
 
 ## How to use
 
-1. `yarn install`
+1. `yarn`
 2. add `PRIVATE_KEY` env variable in `.env` file
 3. edit `src/index.ts` to your needs
 4. `yarn start`
